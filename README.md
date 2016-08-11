@@ -6,7 +6,7 @@
 $ git clone https://github.com/kvokov/node-web-starter.git my-app
 $ cd my-app
 $ npm install
-$ nmp start
+$ npm start
 ```
 
 ### NPM Scripts
