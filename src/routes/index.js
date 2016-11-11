@@ -1,18 +1,19 @@
-import { Router } from 'express';
+import {Router} from 'express';
+import {version} from '../../package.json';
 
 
-
-export default function() {
+export default function () {
     const router = Router();
 
-    // GET /status- Check service health
+
+    router.get('/', (req, res) => res.json({version}));
     router.get('/status', (req, res) => res.send('OK'));
+
 
     //
     // mount routes here
     //
-
-
+    
 
     return router;
 }

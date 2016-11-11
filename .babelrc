@@ -1,6 +1,8 @@
 {
-  "presets": ["es2015", "stage-0"],
+  "presets": ["latest"],
   "plugins": [
-    ["babel-plugin-transform-builtin-extend", {"globals": ["Error", "Array"]}]
+    ["babel-plugin-transform-builtin-extend", {
+      globals: ["Error", "Array"]
+    }]
   ]
 }

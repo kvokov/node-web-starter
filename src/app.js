@@ -1,43 +1,55 @@
 import express from 'express';
-import dotenv from 'dotenv';
-import errorhandler from 'errorhandler';
 import bodyParser from 'body-parser';
+import cors from 'cors';
+import config from './config';
 import middleware from './middleware';
 import routing from './routes';
-
-
-// load environment variables from .env file
-dotenv.config();
-
+import {AppError} from './helpers';
 
 
 // app
 var app = express();
 
 
-
 // middleware
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(cors({origin: true}));
 
 
 // router middleware
 app.use(middleware());
 
 
-
 // routing
 app.use('/', routing());
 
 
+// catch 404 and forward to error handler
+app.use((req, res, next) => {
+    next(new AppError('Not Found', 404));
+});
 
 
-// error handler, only use in development
-if (process.env.NODE_ENV === 'development') {
-    app.use(errorhandler());
-}
+// if error is not an instanceOf APIError, convert it
+app.use((err, req, res, next) => {
+    if (!(err instanceof AppError)) {
+        const apiError = new AppError(err.message, err.status, err.details);
+        return next(apiError);
+    }
+    return next(err);
+});
 
+
+// error handler
+app.use((err, req, res, next) =>
+    res
+        .status(err.status)
+        .json({
+            message: err.message,
+            details: err.details,
+            stack: config.get('NODE_ENV') == 'development' ? err.stack : undefined
+        })
+);
 
 
 export default app;

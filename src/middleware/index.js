@@ -1,14 +1,12 @@
-import { Router } from 'express';
+import {Router} from 'express';
 
 
-
-export default function() {
+export default function () {
     const router = Router();
 
     //
     // add middleware here
     //
-
 
 
     return router;
