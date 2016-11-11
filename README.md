@@ -1,3 +1,5 @@
+<h1 align="center">A skeleton for Node.js web applications</h1>
+
 <p align="center">
   <img src="http://svgporn.com/logos/nodejs-icon.svg" width="100" title="Node.js">&emsp;
   <img src="http://svgporn.com/logos/express.svg" width="100" title="Express">&emsp;
@@ -5,7 +7,6 @@
   <img src="http://svgporn.com/logos/babel.svg" width="100" title="Babel">&emsp;
   <img src="http://svgporn.com/logos/mocha.svg" width="100" title="Mocha">
 </p>
-# A skeleton for Node.js web applications
 
 ### Getting started
 
