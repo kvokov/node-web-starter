@@ -6,7 +6,6 @@
   "scripts": {
     "start": "nodemon src/index.js --exec babel-node",
     "build": "babel src -d build --copy-files",
-    "serve": "npm run build && forever start build/index.js",
     "test": "NODE_ENV=\"test\" mocha --compilers js:babel-core/register"
   },
   "devDependencies": {

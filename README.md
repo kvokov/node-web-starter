@@ -13,7 +13,7 @@ $ npm start
 
 - Run in development mode - `$ npm start`
 
-- Run in production mode - `$ npm run serve`
+- Run automated tests - `$ npm test`
 
 - Make production build - `$ npm run build`
 
