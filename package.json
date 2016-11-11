@@ -10,18 +10,18 @@
     "test": "NODE_ENV=\"test\" mocha --compilers js:babel-core/register"
   },
   "devDependencies": {
-    "babel-cli": "^6.14.0",
+    "babel-cli": "^6.18.0",
     "babel-plugin-transform-builtin-extend": "^1.1.0",
-    "babel-preset-latest": "^6.14.0",
+    "babel-preset-latest": "^6.16.0",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
-    "mocha": "^2.3.4",
-    "nodemon": "^1.8.1"
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "body-parser": "^1.15.1",
-    "cors": "^2.7.1",
-    "express": "^4.13.4",
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
     "nconf": "^0.8.4"
   },
   "author": "DK",
