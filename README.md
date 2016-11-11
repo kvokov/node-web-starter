@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="http://svgporn.com/logos/nodejs-icon.svg" width="100">&emsp;
+  <img src="http://svgporn.com/logos/express.svg" width="100">&emsp;
+  <img src="http://svgporn.com/logos/es6.svg" width="100">&emsp;
+  <img src="http://svgporn.com/logos/babel.svg" width="100">&emsp;
+  <img src="http://svgporn.com/logos/mocha.svg" width="100">
+</p>
 # A skeleton for Node.js web applications
 
 ### Getting started
@@ -8,14 +15,18 @@ $ cd my-app
 $ npm install
 $ npm start
 ```
+**That's it!** :sunglasses:
 
-### NPM Scripts
+### NPM commands
 
-- Run in development mode - `$ npm start`
+`$ npm start` - Run in development mode
 
-- Run automated tests - `$ npm test`
+`$ npm test` - Run automated tests
 
-- Make production build - `$ npm run build`
+`$ npm run build` - Make production build
+
+### License
+
+[Beerware](LICENSE.md)
 
 
-**That's it!**
