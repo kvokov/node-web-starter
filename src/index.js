@@ -9,6 +9,6 @@ let server = http.createServer(app);
 server.listen(config.get('port'), () => {
     var addr = server.address();
     var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
-    /*eslint no-console: ["error", { allow: ["log"] }] */
-    console.log(`Application server listening on ${bind} in "${config.get('NODE_ENV')}" mode`);
+
+    console.log(`Application server listening on ${bind} in "${config.get('NODE_ENV')}" mode`); // eslint-disable-line no-console
 });
