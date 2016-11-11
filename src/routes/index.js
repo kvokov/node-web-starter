@@ -13,7 +13,7 @@ export default function () {
     //
     // mount routes here
     //
-    
+
 
     return router;
 }
