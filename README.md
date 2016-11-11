@@ -8,7 +8,7 @@
   <img src="http://svgporn.com/logos/mocha.svg" width="100" title="Mocha">
 </p>
 
-### Getting started
+## Getting started
 
 ```shell
 $ git clone https://github.com/kvokov/node-web-starter.git my-app
@@ -18,7 +18,7 @@ $ npm start
 ```
 **That's it!** :sunglasses:
 
-### NPM commands
+## NPM commands
 
 `$ npm start` - Run in development mode
 
@@ -26,7 +26,7 @@ $ npm start
 
 `$ npm run build` - Make production build
 
-### License
+## License
 
 "THE BEER-WARE LICENSE" (Revision 42):
 
