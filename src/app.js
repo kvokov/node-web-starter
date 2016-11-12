@@ -41,15 +41,15 @@ app.use((err, req, res, next) => {
 
 
 // error handler
-app.use((err, req, res) =>
+app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
     res
         .status(err.status)
         .json({
             message: err.message,
             details: err.details,
             stack: config.get('NODE_ENV') == 'development' ? err.stack : undefined
-        })
-);
+        });
+});
 
 
 export default app;
