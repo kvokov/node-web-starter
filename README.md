@@ -1,4 +1,4 @@
-<h1 align="center">A skeleton for Node.js web applications</h1>
+<h1 align="center">Skeleton for Node.js web applications</h1>
 
 <p align="center">
   <img src="http://svgporn.com/logos/nodejs-icon.svg" width="100" title="Node.js">&emsp;
