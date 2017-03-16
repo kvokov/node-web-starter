@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 });
 
 
-// if error is not an instanceOf APIError, convert it
+// if error is not an instanceOf AppError, convert it
 app.use((err, req, res, next) => {
     if (!(err instanceof AppError)) {
         const apiError = new AppError(err.message, err.status, err.details);
